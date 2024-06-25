@@ -1,10 +1,5 @@
 import streamlit as st
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 25 11:37:49 2024
 
-@author: anicr
-"""
 
 import streamlit.components.v1 as components
 
@@ -61,8 +56,4 @@ body {
 components.html(html_code, height=400)
 
 
-st.title("Mi Aplicación Streamlit")
-st.header("Este es un header")
-st.subheader("Este es un subheader")
-st.text("Este es un texto simple.")
-st.selectbox("Elige una opción", ["Opción 1", "Opción 2", "Opción 3"])
+st.markdown('<h2 class="subtitle">¡Bienvenido!',unsafe_allow_html=True)
