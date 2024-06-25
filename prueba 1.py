@@ -1,7 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Definir el HTML y CSS directamente en una cadena de texto
 html_code = """
 <!DOCTYPE html>
 <html>
@@ -11,6 +10,12 @@ html_code = """
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
 }
 
 .title {
@@ -34,10 +39,12 @@ body {
 </style>
 </head>
 <body>
-<h1 class="title">Título con Open Sans</h1>
-<h2 class="subtitle">Subtítulo con Roboto</h2>
-<p class="custom-text">Este es un párrafo con Open Sans.</p>
-<p>Este es un párrafo con la tipografía predeterminada (Roboto).</p>
+<div class="container">
+    <h1 class="title">Título con Open Sans</h1>
+    <h2 class="subtitle">Subtítulo con Roboto</h2>
+    <p class="custom-text">Este es un párrafo con Open Sans.</p>
+    <p>Este es un párrafo con la tipografía predeterminada (Roboto).</p>
+</div>
 </body>
 </html>
 """
@@ -45,4 +52,4 @@ body {
 # Renderizar el componente HTML en Streamlit
 components.html(html_code, height=600)
 
-st.header("Este es un header")
+st.header("a ver qué sale")
